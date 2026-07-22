@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CareerAI - Login</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: rgb(153, 224, 238);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin:0;
+        }
+
+        .header{
+            background:blue;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        .container{
+            width:80%;
+            max-width:500px;
+            background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZgQBogXybR8KifLJowN-4P8raW6pXBh9zgRLO4WuXvQ&s=10");
+            margin:50px auto;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0px 0px 5px gray;
+        }
+
+        h2{
+            text-align:center;
+            color:blue;
+        }
+
+        input{
+            width:95%;
+            padding:10px;
+            margin:10px 0;
+        }
+
+        button{
+            width:100%;
+            background:blue;
+            color:white;
+            padding:10px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:darkblue;
+        }
+
+        label{
+            color:white;
+            font-weight:bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="header">
+    <h1>CAREER SWARMS</h1>
+</div>
+
+<div class="container">
+
+<h2>Login</h2>
+
+<form action="/user_login" method="POST" onsubmit="return loginCheck()">
+
+<label>Name</label><br>
+<input type="text" id="name" name="name" placeholder="Enter Name" required>
+
+<label>Email</label><br>
+<input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+<label>Mobile Number</label><br>
+<input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile Number" required>
+
+<label>Password</label><br>
+<input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+<br><br>
+
+<button type="submit">
+Login
+</button>
+
+</form>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CareerAI - Recommendations</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background:#f2f2f2;
+            text-align:center;
+            margin:0;
+        }
+
+        .header{
+            background:blue;
+            color:white;
+            padding:20px;
+        }
+
+        .box{
+            width:80%;
+            max-width:900px;
+            background:white;
+            margin:40px auto;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        .result{
+            background:#eeeeee;
+            padding:15px;
+            margin:15px 0;
+            border-radius:10px;
+        }
+
+        button{
+            background:blue;
+            color:white;
+            padding:12px 25px;
+            border:none;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:darkblue;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="header">
+    <h1>CareerAI Recommendations</h1>
+</div>
+
+<div class="box">
+
+<h2>Recommendation Result</h2>
+
+<h3>🧠 Extracted Skills</h3>
+
+<div class="result">
+
+<p>
+{{ skills | join(', ') }}
+</p>
+
+</div>
+
+<p>
+Your resume and skills have been analyzed. Matching opportunities are shown below.
+</p>
+
+<div class="result">
+
+<h3>💼 Jobs</h3>
+
+{% for item in matches %}
+
+{% if item.Type == "Job" %}
+
+<p>
+<b>{{ item.Title }}</b><br><br>
+
+<b>Match:</b> {{ item.Match }}%
+
+<br><br>
+
+<b>Matched Skills:</b> {{ item["Matched Skills"] }}
+
+</p>
+
+{% endif %}
+
+{% endfor %}
+
+</div>
+
+<div class="result">
+
+<h3>🎓 Internships</h3>
+
+{% for item in matches %}
+
+{% if item.Type == "Internship" %}
+
+<p>
+<b>{{ item.Title }}</b><br><br>
+
+<b>Match:</b> {{ item.Match }}%
+
+<br><br>
+
+<b>Matched Skills:</b> {{ item["Matched Skills"] }}
+
+</p>
+
+{% endif %}
+
+{% endfor %}
+
+</div>
+
+<div class="result">
+
+<h3>🏆 Hackathons</h3>
+
+{% for item in matches %}
+
+{% if item.Type == "Hackathon" %}
+
+<p>
+<b>{{ item.Title }}</b><br><br>
+
+<b>Match:</b> {{ item.Match }}%
+
+<br><br>
+
+<b>Matched Skills:</b> {{ item["Matched Skills"] }}
+
+</p>
+
+{% endif %}
+
+{% endfor %}
+
+</div>
+
+
+
+
+
+<br>
+
+<button onclick="thankYou()">
+Thank You
+</button>
+
+</div>
+
+<script>
+
+function thankYou(){
+
+    alert("🎉 Thank you for using CareerAI!\n\nWe wish you success in your career journey.");
+
+    window.location.href="/";
+
+}
+
+</script>
+
+</body>
+</html>

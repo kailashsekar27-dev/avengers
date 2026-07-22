@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerAI - Home</title>
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --text-dark: #0f172a;
+            --text-muted: #475569;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #178ea5 0%, #9a156c 100%);
+            color: var(--text-dark);
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #115876;
+            padding: 30px 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-bottom: 4px solid #2563eb;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1e3a8a;
+            letter-spacing: 1.5px;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #dc2626;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        .hero {
+            background-color: #ffffff;
+            padding: 30px 20px;
+            border-radius: 16px;
+            margin-bottom: 35px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid #cbd5e1;
+        }
+
+        .hero h2 {
+            font-size: 1.8rem;
+            color: #0f172a;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        /* Get Started Button */
+        button {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: #ffffff;
+            font-size: 1.05rem;
+            font-weight: 700;
+            padding: 12px 32px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45);
+        }
+
+        /* 3 Boxes Forced into the SAME Line */
+        .boxes-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .box {
+            flex: 1; /* Ensures all 3 boxes take equal width */
+            padding: 30px 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+
+        .box:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .box h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .box p {
+            font-size: 0.95rem;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        /* Custom Box Background Colors & Text Colors */
+        .box-jobs {
+            background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 100%);
+            border-top: 5px solid #2563eb;
+        }
+        .box-jobs h3 { color: #1e40af; }
+        .box-jobs p { color: #1e3a8a; }
+
+        .box-internships {
+            background: linear-gradient(135deg, #f3e8ff 0%, #faf5ff 100%);
+            border-top: 5px solid #9333ea;
+        }
+        .box-internships h3 { color: #6b21a8; }
+        .box-internships p { color: #581c87; }
+
+        .box-hackathons {
+            background: linear-gradient(135deg, #fef3c7 0%, #fffbeb 100%);
+            border-top: 5px solid #d97706;
+        }
+        .box-hackathons h3 { color: #92400e; }
+        .box-hackathons p { color: #78350f; }
+
+        /* Footer */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        /* Stack on very small mobile screens */
+        @media (max-width: 650px) {
+            .boxes-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>CAREER SWARMS</h1> 
+    <p class="subtitle">Agentic AI Platform for Jobs, Internships & Hackathons</p>
+</div>
+
+<div class="container">
+
+    <div class="hero">
+        <h2>Welcome to CAREER SWARMS</h2>
+        <p>Find suitable Jobs, Internships and Hackathons based on your skills.</p>
+        <button onclick="location.href='/login'">
+        Get Started
+    </button>
+
+    <!-- 3 Boxes Forced Side-by-Side in Same Line -->
+    <div class="boxes-row">
+        <div class="box box-jobs">
+            <h3>💼 Jobs</h3>
+            <p>Find full-time positions tailored specifically to your unique skills.</p>
+        </div>
+
+        <div class="box box-internships">
+            <h3>🎓 Internships</h3>
+            <p>Explore exciting internship roles to jumpstart your professional career.</p>
+        </div>
+
+        <div class="box box-hackathons">
+            <h3>🏆 Hackathons</h3>
+            <p>Compete in global hackathons, build innovative products, and win prizes.</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 CAREER SWARMS | Hackathon Project</p>
+</footer>
+</body>
+</html>

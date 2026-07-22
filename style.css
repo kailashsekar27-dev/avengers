@@ -1,0 +1,86 @@
+/* Common Style 
+
+'''body{
+    font-family: Arial;
+    background-color:#f2f2f2;
+    margin:0;
+    text-align:center;
+}
+
+
+
+.header{
+    background-color:blue;
+    color:white;
+    padding:20px;
+}
+
+
+
+.container{
+    width:400px;
+    background:white;
+    margin:50px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 0px 5px gray;
+}
+
+
+
+
+.card{
+    width:300px;
+    background:white;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 0px 5px gray;
+}
+
+
+
+input, textarea{
+    width:90%;
+    padding:10px;
+    margin:10px;
+    border:1px solid gray;
+    border-radius:5px;
+}
+
+
+/* Buttons 
+
+button{
+    background-color:blue;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+
+button:hover{
+    background-color:darkblue;
+}
+
+
+/* Recommendation Result Box *
+
+.result{
+    background:#eeeeee;
+    padding:15px;
+    margin:15px;
+    border-radius:10px;
+}
+
+
+/* Footer 
+
+footer{
+    background:blue;
+    color:white;
+    padding:15px;
+    margin-top:50px;
+}'''*/

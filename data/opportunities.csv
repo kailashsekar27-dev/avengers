@@ -1,0 +1,38 @@
+Type,Title,Skills
+Job,Python Developer,Python Flask SQL
+Job,Data Analyst,Python SQL Data Science
+Job,Machine Learning Engineer,Python Machine Learning
+Job,Full Stack Developer,HTML CSS JavaScript Flask
+Job,Backend Developer,Python Flask API SQL
+Job,Frontend Developer,HTML CSS JavaScript React
+Job,Software Engineer,Python Java SQL
+Job,Java Developer,Java Spring SQL
+Job,Cloud Engineer,AWS Python Linux Docker
+Job,DevOps Engineer,Docker Kubernetes Linux Python
+Job,AI Engineer,Python Machine Learning Deep Learning
+Job,Data Engineer,Python SQL ETL
+Job,Cyber Security Analyst,Networking Linux Python
+Job,Android Developer,Java Kotlin Android
+Job,UI UX Designer,Figma HTML CSS
+
+Internship,Web Developer Internship,HTML CSS JavaScript
+Internship,AI Research Internship,Python Machine Learning
+Internship,Data Science Internship,Python SQL Data Science
+Internship,Python Developer Internship,Python Flask
+Internship,Frontend Internship,HTML CSS JavaScript React
+Internship,Backend Internship,Python Flask SQL
+Internship,Java Developer Internship,Java SQL
+Internship,Cloud Internship,AWS Linux Python
+Internship,Cyber Security Internship,Networking Linux
+Internship,ML Internship,Python Machine Learning
+
+Hackathon,Google AI Hackathon,Python Machine Learning
+Hackathon,Web Development Hackathon,HTML CSS JavaScript
+Hackathon,Data Science Challenge,Python SQL Data Science
+Hackathon,Smart India Hackathon,Python Java AI
+Hackathon,CodeFest 2026,Python Java C++
+Hackathon,AI Innovation Challenge,Python Deep Learning
+Hackathon,Full Stack Hackathon,HTML CSS JavaScript Flask
+Hackathon,Cloud Computing Challenge,AWS Docker Python
+Hackathon,Cyber Security CTF,Networking Linux Python
+Hackathon,Open Source Sprint,Python Git GitHub
